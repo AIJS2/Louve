@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Neii
+	
+</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="/MeandU/css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="MeandU/js/jquery.js"></script>
+<script type="text/javascript" src="MeandU/js/garden.js"></script>
+<script type="text/javascript" src="MeandU/js/function.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*THE OPENING</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hai Neisya !<br />
+			Aku membuat web ini untuk neisya <br />
+			<span class="comments">// Wanita Yang Begitu Sulit ahahah  </span><br />
+			Aku harap neisya bisa senang  ;<br />
+			<span class="comments">// Wajah    mu Suara mu Kata - Kata mu.</span><br />
+			Segala tentang mu telah terpatri dalam hatiku;<br />
+			Semoga seiring berjalan nya waktu;<br />
+			Kamu dan aku bisa semakin kuat menghadapi hal yang tak terduga;<br />
+			Kita harus bisa semangat yaawww;<br />
+			CEMANGAAAAAT;<br />
+			<span class="comments">// Dan aku yakin bahwa masih banyak lagi.</span><br />
+			Aku juga yakin karena itu kita bisa semakin kuat dan kuat agii;<br />
+			<br>
+			<br>
+			All I want to say is:<br />
+			Baby, I will love you forever;<br />
+			<br>
+			<br>
+			Now If you want to go to the web click the heart <br />
+			<br>
+			<span id="heartspan">
+			<a href="index.html"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU INFINIT MY LOVE<br/>
+					<div class="signature"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+var together 
+
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>

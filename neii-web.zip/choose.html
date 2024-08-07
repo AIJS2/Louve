@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">   
+<link rel="stylesheet" href="MeandU/css/choose.css">
+<title>Others</title>
+<script src="MeandU/js/darkmode.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<body> 
+</style>
+  </head>
+  
+    <header id="header">
+        <a href="index.html" class="logo">MeandU.</a>
+        <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html#about" class="ani">About</a></li>
+            <li><a href="nanana1.html" class="ani">Gallery</a></li>
+            <li><a href="choose.html" class="ani">nanana</a></li>
+            <input type="checkbox" onclick="ubahMode()">
+        </ul>
+        </nav>
+    </header>
+  <body>
+    <!-- Content container -->
+    <main>
+      <div class="container">
+          <div class="card-container">
+              <a href="MeandU/Love Letter/nana.html" class="card" id="card1">
+                  <div class="card-content">
+                      <h3>Letter</h3>
+                      <p>Just a Letter</p>
+                  </div>
+              </a>
+              <div class="container">
+                <div class="card-container">
+                    <a href="MeandU/Music Player/index.html" class="card" id="card1">
+                        <div class="card-content">
+                            <h3>Music Player</h3>
+                            <p>Play Some Music</p>
+                        </div>
+                    </a>
+              <a href="https://bettergallery.carrd.co/" class="card" id="card2">
+                  <div class="card-content">
+                      <h3>Better Gallery</h3>
+                      <p>A better gallery than i made. </p>
+                  </div>
+              </a>
+              <a href="MeandU/Game/Memory Game/Rm.html" class="card" id="card3">
+                  <div class="card-content">
+                      <h3>Memory Game</h3>
+                      <p>Can my lovely nei remember all the number.</p>
+                  </div>
+              </a>
+              <a href="MeandU/Game/Tower Block/Towerblock.html" class="card" id="card3">
+                <div class="card-content">
+                    <h3>Block Tower</h3>
+                    <p>Another game for my beloved nei.</p>
+                </div>
+            </a>
+              <a href="index.html" onclick="showAlert()" class="card" id="card4">
+                  <div class="card-content">
+                      <h3>Back</h3>
+                      <p>Return to the Home page.</p>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </main>
+    <script>
+      feather.replace()
+    </script>
+
+    <script>
+  function showAlert() {
+  while (true) {
+    const result = window.prompt('Hallo Sayang, Lanjut? (ya/tidak)');
+    if (result === null) {
+      alert('ya atau tidak ay apasih malah di cancel');
+      continue;
+    }
+    if (result.toLowerCase() === 'ya') {
+      // code to execute when "ya" is entered
+      alert('udah di check semua belum ? ');
+      alert('kalau belum jangan balik ke main page donk');
+      const result2 = window.prompt('Bener nih udah semua ? (sudah/belum)');
+      if (result2 === null) {
+        alert('sudah atau belum ay, bukan malah di cancel hadeh');
+        continue;
+      }
+      if (result2.toLowerCase() === 'sudah') {
+        alert('kalo belum semua sih kamu jahat xixixixi');
+        alert('Yaudah deh kalau sudah semuaa');
+        alert('Eh bener gak udah semuaaa ?');
+        alert('Kalo udah coba ketik I love you Aziz');
+
+        let name;
+        while (true) {
+          name = prompt('Ketik yang bener ayy');
+          if (name === null) {
+            alert('No name provided');
+          } else if (name.toLowerCase() !== 'i love you aziz') {
+            alert('Tuhkan Salah, Ulang Ulang');
+          } else {
+            break;
+          }
+        }
+
+        alert('Love you too!');
+        break;
+      } else if (result2.toLowerCase() === 'belum') {
+        alert('ih masa gitu sih :( ');
+      }
+    } else if (result.toLowerCase() === 'tidak') {
+      alert('Ga boleh balik! Lanjut aja!');
+    }
+  }
+}
+    </script>
+  </body>
+</html>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal({
+        reset: true,
+        duration: 1500,
+        delay: 500,
+        distance: '60px'
+    });
+    
+    ScrollReveal().reveal('.logo', {origin: 'left'});
+    ScrollReveal().reveal('.active', {origin: 'right'});
+    ScrollReveal().reveal('.container', {origin: 'right'});
+    ScrollReveal().reveal('#text', {origin: 'right'});
+    ScrollReveal().reveal('#header', {origin: 'left'});
+    ScrollReveal().reveal('#about', {origin: 'right'});
+    ScrollReveal().reveal('#hi', {origin: 'left'});
+   
+  
+
+</script>

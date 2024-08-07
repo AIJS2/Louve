@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rancho&family=Hachi+Maru+Pop&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .logo {
+  color: rgb(209, 45, 45);
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+#header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+#header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #094b65;
+  border-radius: 20px;
+  font-family: "Hachi Maru Pop", cursive;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+  background-color: #faf3d2;
+  color: #92c7cf;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #adc4ce;
+  background-image: url("bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+.wrapper {
+  display: flex;
+  max-width: 650px;
+  width: 100%;
+  height: 400px;
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper i.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 36px;
+  width: 36px;
+  background-color: #343f4f;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s linear;
+  z-index: 100;
+  cursor: pointer;
+}
+i.button:active {
+  transform: scale(0.94) translateY(-50%);
+}
+i#prev {
+  left: 25px;
+}
+i#next {
+  right: 25px;
+}
+.image-container {
+  height: 320px;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+.image-container .carousel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  pointer-events: none;
+}
+
+.parallax img#awan-atas-kanan {
+  transform: translateX(500px);
+  margin-top: -80px;
+}
+
+.parallax img#awan-bawah-kiri {
+  transform: translateY(320px);
+  margin-left: -100px;
+}
+.parallax #teolagi-bawah-kiri {
+  transform: translateY(420px);
+  margin-left: -450px;
+}
+
+.parallax #teolagi-bawah-kanan {
+  transform: translateY(420px);
+  margin-left: 850px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  #header {
+    padding: 20px 50px;
+  }
+  .wrapper {
+    max-width: 500px;
+    height: 300px;
+  }
+  .image-container {
+    height: 250px;
+    max-width: 400px;
+  }
+  .parallax img {
+    width: 30%;
+  }
+  .parallax img#awan-atas-kanan {
+    transform: translateX(300px);
+    margin-top: -50px;
+  }
+  .parallax img#awan-bawah-kiri {
+    transform: translateY(200px);
+    margin-left: -50px;
+  }
+  .parallax #teolagi-bawah-kiri {
+    transform: translateY(300px);
+    margin-left: -200px;
+  }
+  .parallax #teolagi-bawah-kanan {
+    transform: translateY(300px);
+    margin-left: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  #header {
+    padding: 10px 20px;
+  }
+  .wrapper {
+    max-width: 300px;
+    height: 200px;
+  }
+  .image-container {
+    height: 150px;
+    max-width: 250px;
+  }
+  .parallax img {
+    width: 20%;
+  }
+  .parallax img#awan-atas-kanan {
+    transform: translateX(260px);
+    margin-top: -20px;
+  }
+  .parallax img#awan-bawah-kiri {
+    transform: translateY(180px);
+    margin-left: -20px;
+  }
+  .parallax #teolagi-bawah-kiri {
+    transform: translateY(150px);
+    margin-left: -100px;
+  }
+  .parallax #teolagi-bawah-kanan {
+    transform: translateY(150px);
+    margin-left: 340px;
+  }
+}
