@@ -21,13 +21,13 @@ const songs = [
   {
     title: "Keep You Safe",
     artist: "Yahya",
-    img_src: "/MeandU/assets/mylope.jpg",
+    img_src: "/mine/MeandU/assets/mylope.jpg",
     src: "https://audio.jukehost.co.uk/DMrzK6lZSBdVpcqY0pPmJ7rCcUOJMJO9",
   },
   {
     title: "Mantra Hujan",
     artist: "Kobo Kanaeru",
-    img_src: "/MeandU/assets/kobo.jpeg",
+    img_src: "/mine/MeandU/assets/kobo.jpeg",
     src: "https://audio.jukehost.co.uk/zZapAf3lSCf1dLMhTf8zDgnlc1aheqOw",
   },
 
